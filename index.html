@@ -1,50 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Tabella Lavori</title>
-</head>
 <body>
-    <table border="1">
-        <tr>
-            <th>AZIENDA</th>
-            <th>BENE</th>
-            <th>Q.TÀ</th>
-            <th>N. PDV</th>
-            <th>1 FOTO MACCHINA PER ESEMPLARE + TARGHETTA</th>
-            <th>DDT DI TUTTI I BENI</th>
-            <th>FOTO GESTIONALE O CREDENZIALI WEB</th>
-            <th>IMPORTI (FATTURE O TABELLA)</th>
-            <th>INVIO</th>
-            <th>NOTE</th>
-        </tr>
-        <tr>
-            <td><input type="text" name="azienda[]"></td>
-            <td><input type="text" name="bene[]"></td>
-            <td><input type="text" name="qtà[]"></td>
-            <td><input type="text" name="pdv[]"></td>
-            <td><input type="text" name="foto_macchina[]"></td>
-            <td><input type="text" name="ddt_beni[]"></td>
-            <td><input type="text" name="foto_gestionale[]"></td>
-            <td><input type="text" name="importi[]"></td>
-            <td><input type="text" name="invio[]"></td>
-            <td><input type="text" name="note[]"></td>
-        </tr>
-    </table>
-    <button onclick="aggiungiRiga()">Aggiungi Riga</button>
-    <script>
-        function aggiungiRiga() {
-            var table = document.querySelector('table');
-            var row = table.insertRow(-1);
-            var columns = 10;
-
-            for (var i = 0; i < columns; i++) {
-                var cell = row.insertCell(i);
-                var input = document.createElement('input');
-                input.type = 'text';
-                input.name = table.rows[0].cells[i].textContent.toLowerCase().replace(/ /g, '_') + '[]';
-                cell.appendChild(input);
-            }
-        }
-    </script>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ685KLcR3NJG2CJUi_2q4-5KxtlVeXpZbmQN6WC0nYP7y66ijkExmdMQGxYiFOxXNhHtXpZEsQM32W/pubhtml?widget=true&amp;headers=false"></iframe>
 </body>
 </html>
